@@ -1,0 +1,417 @@
+body {
+    background: #fffefb;
+}
+
+/*---------------------HEADER-----------------------*/
+
+header {
+    background: #fffefb;
+    width: 100%;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 8px;
+}
+
+.logo {
+    display: none;
+}
+
+.logo1 {
+    width:  60px;
+}
+
+.nav {
+    width: 75%;
+}
+
+.ul-nav a{
+    font-family: 'Ramaraja', serif;
+    color: #7300BA;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.iconos {
+    margin: 20px 10px 20px 0;
+    order: 3;
+}
+
+.iconos button {
+    border: none;
+    border-radius: 100%;
+    background-color: #7300BA;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.iconos i {
+    color: white;
+    padding: 10px 5px;
+    font-size: 9px;
+}
+
+.buscador {
+    order: 2;
+    margin: 0 8px;
+    min-width: 50%;
+    padding: 5px;
+}
+
+.buscador input{
+    box-sizing: border-box;
+    border: 1px solid #7300BA;
+    border-radius: 100px;
+    padding: 8px;
+    padding-left: 16px;
+    min-width: 30%;
+}
+
+.buscador input:focus{
+
+    background: #7300BA;
+    color: white;
+
+}
+
+.buscador button {
+    border: none;
+    border-radius: 100%;
+    background-color: #7300BA;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.buscador i {
+    color: white;
+    padding: 10px 5px;
+}
+
+/*---------------------MAIN-----------------------*/
+
+main {
+
+    background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+
+}
+
+.pagos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bancos {
+    box-sizing: border-box;
+    min-width: 25%;
+    min-height: 16rem;
+    background: linear-gradient(#e9c5ff, #9198e500);;
+    border-radius: 30px;
+    padding: 30px 80px;
+    margin: 20px;
+}
+
+.bancos img {
+    box-sizing: border-box;
+    width: 15rem;
+    object-fit: contain;
+    text-align: center;
+}
+
+.bancos p {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+/*---------------------FOOTER-----------------------*/
+
+footer {
+    background: #7300BA;
+    width: 100%;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.redes { 
+    min-width: 40%;
+}
+
+.redes-boton button{
+    background-color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 100px;
+    margin-right: 10px;
+}
+
+.redes-boton i {
+    color: #7300BA;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.redes-boton a {
+    cursor: auto;
+}
+
+.contacto h3 {
+    text-align: right;
+}
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.copy {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+footer hr {
+
+    margin: 0;
+    color: white;
+}
+
+/*---------------------MQ480-----------------------*/
+
+@media screen and (min-width: 480px){
+    
+    .barra {
+        margin: 0;
+    }
+
+    .titulo {
+        min-width: 25%;
+    }
+
+    .titulo img{
+        min-width: 100%;
+    }
+
+    .logo {
+        display: block;
+        width: 2rem;
+        padding: 0;
+    }
+    
+    .logo1 {
+        display: none;
+    }
+
+    .nav {
+        width: 60%;
+        margin-right: 25px;
+        box-sizing: border-box;
+    }
+
+    .ul-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .ul-nav a {
+        padding: 15px 14px;
+        border-radius: 100px;
+        transition: background-color .3s ease;
+    }
+
+    .ul-nav a:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+    .iconos {
+        order: 2;
+        min-width: 0%;
+    }
+
+    .iconos button {
+        transition: background .3s ease;
+    }
+
+    .iconos button:hover {
+
+        background: #fffefb;
+    }
+
+    .iconos i {
+
+        transition: color .3s ease;
+    }
+
+    .iconos i:hover{
+        color: #7300BA;
+    }
+
+    .buscador {
+        min-width: 70%;
+        order: 3;
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+    }
+
+    .buscador input{
+        width: 50%;
+    }
+
+    .buscador button {
+
+        transition: background .3s ease;
+
+    }
+
+    .buscador button:hover {
+
+        background: #fffefb;
+
+    }
+
+    .buscador i {
+
+        transition: color .3s ease;
+    }
+
+    .buscador i:hover {
+
+        color: #7300BA;
+    }
+
+    .acquarella button {
+        font-size: 13px;
+        width: 33%;
+    }
+
+
+    .redes-boton button{
+        padding: 5px;
+        margin-right: 13px;
+    }
+    
+    .redes-boton i {
+        font-size: 20px;
+    }
+
+}
+
+/*---------------------MQ960-----------------------*/
+
+@media screen and (min-width: 960px){
+
+    header {
+        position: fixed;
+    }
+
+    .barra {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .titulo {
+        min-width: 20%;
+    }
+
+    .acquarella {
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .acquarella h1 {
+        font-size: 30px;
+        margin-right: 160px;
+    }
+    
+    .acquarella button {
+        font-size: 15px;
+        padding: 10px;
+        width: 20%;
+        opacity: 90%;
+        margin-right: 160px;
+        transition: all .3s ease;
+    }
+
+    .acquarella > button:hover{
+        color: #7300BA;
+        background-color: white;
+    }
+
+    .nav {
+        min-width: 35%;
+    }
+    
+    .ul-nav a {
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 15px 20px 10px 20px;
+        border-radius: 100px;
+        transition: background-color .3s ease;
+    }
+
+    .ul-nav a:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+    .buscador {
+        order: 2;
+        min-width: 30%;
+        justify-content: none;
+    }
+
+    .buscador input {
+        min-width: 75%;
+    }
+
+    .iconos {
+        min-width: 10%;
+        order: 3;
+    }
+
+    main {
+        background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+        padding-top: 5rem;
+    }
+}
+
+
+@media screen and (min-width: 1800px){
+
+    .ul-nav a{
+        font-size: 22px;
+    }
+
+}

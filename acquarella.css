@@ -1,0 +1,657 @@
+
+/*
+font-family: 'Kanit', sans-serif;
+font-family: 'Kaushan Script', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Ramaraja', serif;
+
+*/
+
+body {
+    background: #fffefb;
+}
+
+/*---------------------HEADER-----------------------*/
+
+header {
+    background: #fffefb;
+    width: 100%;
+}
+
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 8px;
+}
+
+.logo {
+    display: none;
+}
+
+.logo1 {
+    width:  60px;
+}
+
+.nav {
+    width: 75%;
+}
+
+.ul-nav a{
+    font-family: 'Ramaraja', serif;
+    color: #7300BA;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.iconos {
+    margin: 20px 10px 20px 0;
+    order: 3;
+}
+
+.iconos button {
+    border: none;
+    border-radius: 100%;
+    background-color: #7300BA;
+    margin-left: 8px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.iconos i {
+    color: white;
+    padding: 10px 5px;
+    font-size: 9px;
+}
+
+.buscador {
+    order: 2;
+    margin: 0 8px;
+    min-width: 50%;
+    padding: 5px;
+}
+
+.buscador input{
+    box-sizing: border-box;
+    border: 1px solid #7300BA;
+    border-radius: 100px;
+    padding: 8px;
+    padding-left: 16px;
+    min-width: 30%;
+}
+
+.buscador input:focus{
+
+    background: #7300BA;
+    color: white;
+
+}
+
+.buscador button {
+    border: none;
+    border-radius: 100%;
+    background-color: #7300BA;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.buscador i {
+    color: white;
+    padding: 10px 5px;
+}
+
+/*---------------------MAIN-----------------------*/
+
+main {
+
+    background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+}
+
+.acquarella {
+    background-image: url(images/models2.jpg);
+    /*display: flex;*/
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+}
+
+.acquarella h1 {
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 0px #7300BA;
+    font-weight: bold;
+}
+
+.acquarella button {
+    border: none;
+    border-radius: 5px;
+    background: #7300BA;
+    box-shadow: 0px 0px 5px 2px black;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 10px;
+    width: 50%;
+    opacity: 90%;
+}
+
+.seccion1 {
+
+    text-align: center;
+
+}
+
+.seccion1 hr{
+    margin: 0;
+    border: none;
+    height: 2px;
+    background: linear-gradient(0.25turn, #7400bca6, #ebf8e1, #7400bca6);
+}
+
+.seccion1 h2 {
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.nav-categorias { 
+    min-width: 100%;
+    background: rgba(0, 0, 0);
+    padding: 8px 0;
+}
+
+.nav-categorias a {
+
+    font-family: 'Kanit', sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.nav-categorias a:hover {
+
+    background: white;
+    color: black;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 50px 15px;
+}
+
+.container div {
+
+    border: #f2dbffea solid 1px;
+}
+
+.productos {
+    width: 24%;
+    height: 25rem;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0 4px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: linear-gradient(#e9c5ff, #9198e500);;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 1s ease;
+}
+
+.productos:hover {
+
+    background: linear-gradient(#9198e500, #e9c5ff);
+}
+
+.productos img {
+    width: 100%;
+    height: 20rem;
+    object-fit: contain;
+    margin: 0;
+    border-radius: 10px;
+}
+
+.productos a {
+    width: 100%;
+    height: 30rem;
+    font-family: 'Ramaraja', serif;
+    color: black;
+    text-decoration: none;
+}
+
+.productos p {
+
+    font-size: 15px;
+    text-align: center;
+}
+
+/*---------------------SLIDER-----------------------*/
+
+.container-slider{
+
+    width: 100%;
+    min-width: 90%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 280px;
+    margin-left: -100%;
+
+}
+
+.slider__section{
+
+width: 100%;
+
+}
+
+.slider__img{
+
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slider__btn{
+
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.412);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background .5s ease;
+
+}
+
+.slider__btn:hover{
+
+    background: white;
+
+}
+
+.slider__btn--right{
+
+    right: 10px;
+
+}
+
+.slider__btn--left{
+
+    left: 10px;
+
+}
+
+
+
+/*---------------------FOOTER-----------------------*/
+
+footer {
+    background: #7300BA;
+    width: 100%;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 10px;
+}
+
+footer h3 {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.redes { 
+    min-width: 40%;
+}
+
+.redes-boton button{
+    background-color: white;
+    padding: 4px;
+    border: none;
+    border-radius: 100px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.redes-boton button:hover{
+    background-color: #7300BA
+}
+
+.redes-boton i {
+    color: #7300BA;
+    font-size: 15px;
+}
+
+.redes-boton i:hover {
+    color: #fffefb;
+}
+
+.redes-boton a {
+    cursor: auto;
+}
+
+.contacto h3 {
+    text-align: right;
+}
+.contacto a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    letter-spacing: 1px;
+}
+
+.copy {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px 0;
+    font-size: 12px;
+}
+
+footer hr {
+
+    margin: 0;
+    color: white;
+}
+
+/*---------------------MQ480-----------------------*/
+
+@media screen and (min-width: 480px){
+    
+    .barra {
+        margin: 0;
+    }
+
+    .titulo {
+        min-width: 25%;
+    }
+
+    .titulo img{
+        min-width: 100%;
+    }
+
+    .logo {
+        display: block;
+        width: 2rem;
+        padding: 0;
+    }
+    
+    .logo1 {
+        display: none;
+    }
+
+    .nav {
+        width: 60%;
+        margin-right: 25px;
+        box-sizing: border-box;
+    }
+
+    .ul-nav {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .ul-nav a {
+        padding: 15px 14px;
+        border-radius: 100px;
+        transition: background-color .3s ease;
+    }
+
+    .ul-nav a:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+    .iconos {
+        order: 2;
+        min-width: 0%;
+    }
+
+    .iconos button {
+        transition: background .3s ease;
+    }
+
+    .iconos button:hover {
+
+        background: #fffefb;
+    }
+
+    .iconos i {
+
+        transition: color .3s ease;
+    }
+
+    .iconos i:hover{
+        color: #7300BA;
+    }
+
+    .buscador {
+        min-width: 70%;
+        order: 3;
+        display: flex;
+        justify-content: end;
+        margin-right: 30px;
+    }
+
+    .buscador input{
+        width: 50%;
+    }
+
+    .buscador button {
+
+        transition: background .3s ease;
+
+    }
+
+    .buscador button:hover {
+
+        background: #fffefb;
+
+    }
+
+    .buscador i {
+
+        transition: color .3s ease;
+    }
+
+    .buscador i:hover {
+
+        color: #7300BA;
+    }
+
+    .acquarella{
+            /*temporal por slider*/
+    display: none;
+    }
+
+    .acquarella button {
+        font-size: 13px;
+        width: 33%;
+    }
+
+
+    .redes-boton button{
+        padding: 5px;
+        margin-right: 13px;
+    }
+    
+    .redes-boton i {
+        font-size: 20px;
+    }
+
+
+    .productos {
+        width: 30%;
+        max-height: 20rem;
+        min-height: 10rem;
+    }
+
+    .productos img {
+        width: 100%;
+        height: 15rem;
+
+    }
+    
+    .productos a {
+        width: 100%;
+        height: 10rem;
+    }
+    
+    .productos p {
+    
+        font-size: 12px;
+    }
+
+    .slider{
+        height: 300px;
+    }
+}
+
+/*---------------------MQ960-----------------------*/
+
+@media screen and (min-width: 960px){
+
+    header {
+        position: fixed;
+    }
+
+    .barra {
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    .titulo {
+        min-width: 20%;
+    }
+
+    .acquarella {
+        /*display: flex;*/
+        justify-content: center;
+        align-items: end;
+        flex-direction: column;
+        height: 400px;
+            /*temporal por slider*/
+        display: none;
+    }
+    
+
+    .acquarella h1 {
+        font-size: 30px;
+        margin-right: 160px;
+    }
+    
+    .acquarella button {
+        font-size: 15px;
+        padding: 10px;
+        width: 20%;
+        opacity: 90%;
+        margin-right: 160px;
+        transition: all .3s ease;
+    }
+
+    .acquarella > button:hover{
+        color: #7300BA;
+        background-color: white;
+    }
+
+    .nav {
+        min-width: 35%;
+    }
+    
+    .ul-nav a {
+        box-sizing: border-box;
+        font-size: 15px;
+        padding: 15px 20px 10px 20px;
+        border-radius: 100px;
+        transition: background-color .3s ease;
+    }
+
+    .ul-nav a:hover{
+        background-color: rgb(238, 238, 238);
+    }
+
+    .buscador {
+        order: 2;
+        min-width: 30%;
+        justify-content: none;
+    }
+
+    .buscador input {
+        min-width: 75%;
+    }
+
+    .iconos {
+        min-width: 10%;
+        order: 3;
+    }
+
+    main {
+        background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+        padding-top: 5rem;
+    }
+
+    .slider{
+        height: 400px;
+    }
+}
+
+/*---------------------MQ1800-----------------------*/
+
+@media screen and (min-width: 1800px){
+
+    .ul-nav a{
+        font-size: 22px;
+    }
+
+    .acquarella{
+        /*temporal por slider*/
+    display: none;
+    }
+
+    .slider{
+    height: 600px;
+    margin-top: 30px;
+    }   
+
+}
