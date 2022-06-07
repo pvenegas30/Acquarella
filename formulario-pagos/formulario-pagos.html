@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Kaushan+Script&family=Lobster&family=Ramaraja&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9e7a2bd5ad.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="metodos.css">
+    <link rel="stylesheet" href="formulariocss.css">
     <link rel="stylesheet" href="../acquarellareset.css">
 </head>
 <body>
@@ -40,27 +40,65 @@
     </div>
     </header>
     <main>
-        <div class="pagos">
 
-            <div class="bancos">
-                <img src="images-pagos/bnc.png" alt="">
+        <h2>Realiza tu pago de manera rápida</h2>
+        <h3>Instrucciones</h3>
+        <p>
 
-                    <p>Titular de la cuenta: Eva Venegas</p>
+            Contamos con tres métodos de pago, por favor llena todos los parámetros, especifíca tu dirección y adjunta la captura del pago realizado. En cuanto hayamos verificado te mandaremos un mensaje a tu email para confirmar tu pedido y envío (solo hacemos envíos en Venezuela). 
+
+        </p>
+
+        <div class="formulario-container">
+
+            <h3>Por favor llena todos los parámetros</h3>
+
+            <br>
+
+            <div class="form-radio" id="form1">
+                <form action="" method="post">
+
+                    <ul>
+                        <li><input type="radio" class="radio" title="Bs"> Pago por transferencia o pago móvil en Bs.</li>
+
+                        <li><input type="radio" class="radio" title="Binance"> Pago por Binance.
+                        </li>
+
+                        <li><input type="radio" class="radio" title="Zinli"> Pago por Zinli.
+                        </li>
+
+                    </ul>
+
+                </form>
+
+            </div>
+            <hr>
+            <div class="form-input" id="form2">
+
+            <form action="" method="post">
+
+                <ul>
+                    <li>NOMBRE <input type="name" placeholder="Escribe tu Nombre y Apellido" class="parametro" required=""></li>
+                    
+                    <li>TELÉFONO <input type="number" placeholder="Número de teléfono" class="parametro" required=""></li>
+
+                    <li>EMAIL <input type="email" placeholder="Email" class="parametro" required=""></li>
+
+                    <li>DIRECCIÓN <input type="text" placeholder="Dirección específica" class="parametro" required=""></li>
+
+                    <li>CÓDIGO <input type="number" placeholder="Códgo de prenda" class="parametro" required=""></li>
+                </ul>
+
+                <br><br>
+                ADJUNTA LA CAPTURA DEL PAGO <br><input type="file" title="Captura de pago" class="captura" required="">
+                <br>
+                <input type="submit" class="enviar">
+                <br>
 
             </div>
 
-            <div class="bancos">
-
-                <img src="images-pagos/zinli.png" alt="">
-                <p> Correo: acquarellaswimwear@gmail.com</p>
-            </div>
-
-            <div class="bancos">
-
-                <img src="images-pagos/binance.png" alt="">
-                <p>Correo: acquarellaswimwear@gmail.com</p>
-            </div>
-
+            </form>
+            
         </div>
     </main>
     <footer>

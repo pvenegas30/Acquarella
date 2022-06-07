@@ -100,43 +100,118 @@ header {
 main {
 
     background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
-.pagos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+main h2 {
 
-.bancos {
-    box-sizing: border-box;
-    min-width: 25%;
-    min-height: 16rem;
-    background: linear-gradient(#e9c5ff, #9198e500);;
-    border-radius: 30px;
-    padding: 30px 80px;
-    margin: 20px;
-}
-
-.bancos img {
-    box-sizing: border-box;
-    width: 15rem;
-    object-fit: contain;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
     text-align: center;
+    padding-top: 8.5%;
 }
 
-.bancos p {
+main h3 {
+
+    font-size: 22px;
+    font-weight: bold;
+    margin: 1rem 20rem 0 20rem;
+    text-align: justify;
+}
+
+main p {
+
+    text-align: justify;
+    margin: 1rem 20rem 1rem 20rem;
+    font-size: 18px;
+
+}
+
+.formulario-container {
+
+    margin: 1rem 19rem 1rem 19rem;
+    text-align: justify;
+    font-size: 18px;
+
+}
+
+.formulario-container h3{
+
+    text-align: center;
+    font-size: 22px;
+    color: #fffefb;
+    background-color: #7300BA;
+    padding: 6px;
+    margin: 0 20px 0 20px;
+    border-radius: 15px;
+
+
+}
+
+.form-radio {
+
+margin-bottom: 2rem;
+
+}
+
+.radio {
+
+    margin: 1rem 0 1rem 6rem;
+    cursor: pointer;
+
+}
+
+.form-input form { 
+
+    margin: 1rem 0 1rem 6rem;
+
+}
+
+.parametro { 
+
+    padding-right: 2rem;
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+    border-color: #7300BA;
+
+}
+
+.captura {
+
+    margin: 2rem 0 2rem 0;
+    color: #fffefb;
+    padding: 5px;
+    background-color: #7300BA;
+    cursor: pointer;
+
+}
+
+.enviar {
+
+    background-color: #7300BA;
+    color: #fffefb;
+    font-size: 20px;
+    padding: 0.5rem 2rem;
     display: block;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 13px;
-    font-weight: 500;
+    margin: auto;
+    border: none;
+    transition: all 1s ease;
+    margin-bottom: 3rem;
+    cursor: pointer;
+
 }
 
+.enviar:hover {
+
+    background-color: #fffefb;
+    color: #7300BA;
+    padding: 0.7rem 2.2rem;
+    border: #7300BA solid 1px;
+
+}
 
 /*---------------------FOOTER-----------------------*/
 
@@ -402,35 +477,61 @@ footer hr {
         order: 3;
     }
 
-    main {
-        background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
-        padding-top: 5rem;
-    }
+main {
 
-    .pagos {
-        margin: 1.5% 0 3% 0;
-    }
+    background: linear-gradient(rgb(240, 240, 240), rgba(0, 0, 0, 0));
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
-    .bancos {
-        min-width: 40%;
-        min-height: 16rem;
-    }
-    
-    .bancos img {
+main h2 {
 
-        min-width: 15rem;
-        width: 20rem;
-        max-width: 23rem;
-        display: block;
-        margin: auto;
-    }
-    
-    .bancos p {
 
-        margin-top: 2rem;
-        font-size: 20px;
+}
 
-    }
+main h3 {
+
+
+}
+
+main p {
+
+
+
+}
+
+.formulario-container {
+
+
+
+}
+
+.formulario-container h3{
+
+
+
+
+}
+
+.form-radio {
+
+
+}
+
+.radio {
+
+
+}
+
+.form-input form { 
+
+
+}
+
+.parametro { 
+
+
+
+}
 }
 
 
