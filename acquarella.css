@@ -18,6 +18,7 @@ header {
   width: 100%;
   position: fixed;
   z-index: 1;
+  transition: all 0.3s ease;
 }
 
 .barra {
@@ -406,11 +407,17 @@ main {
   text-align: center;
   border-radius: 50%;
   cursor: pointer;
-  transition: background 0.5s ease;
+  transition: background 0.2s ease;
 }
 
-.slider__btn:hover {
-  background: white;
+.slider__btn:active {
+  background: #fffefb;
+}
+
+.slider__btn span {
+
+  display: none;
+
 }
 
 .slider__btn--right {
@@ -453,10 +460,7 @@ footer h3 {
   border-radius: 100px;
   margin-right: 10px;
   cursor: pointer;
-}
-
-.redes-boton button:hover {
-  background-color: #7300ba;
+  transition: all 0.5s ease;
 }
 
 .redes-boton i {
@@ -464,13 +468,9 @@ footer h3 {
   font-size: 15px;
 }
 
-.redes-boton i:hover {
-  color: #fffefb;
-}
-
 .redes-boton a {
   cursor: auto;
-}
+} 
 
 .contacto h3 {
   text-align: right;
@@ -499,9 +499,16 @@ footer hr {
 
 @media screen and (min-width: 480px) {
 
+  
   .esconder {
 
     display: block;
+
+  }
+
+  #toggle-menu {
+
+    width: 40%;
 
   }
 
@@ -513,6 +520,7 @@ footer hr {
 
   .barra {
     margin: 0;
+    height: 12%;
   }
 
   .titulo {
@@ -534,20 +542,34 @@ footer hr {
   }
 
   .nav {
-    width: 60%;
+    width: 100%;
     margin-right: 25px;
     box-sizing: border-box;
   }
 
   .ul-nav {
-    display: flex;
+
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 30%;
+  }
+
+  .ul-nav hr {
+
+    display: none;
+
+  }
+
+  .ul-nav li {
+
+    width: 20%;
   }
 
   .ul-nav a {
-    padding: 15px 14px;
+    padding: 14px 12px;
     border-radius: 100px;
+    color: #7300ba;
+    font-size: 12px;
     transition: background-color 0.3s ease;
   }
 
@@ -555,9 +577,26 @@ footer hr {
     background-color: rgb(238, 238, 238);
   }
 
+  .fa-water-ladder {
+
+    display: none;
+
+  }
+
+  .fa-fish {
+
+    display: none;
+
+  }
+
+  .fa-person-drowning {
+
+    display: none;
+  }
+
   .iconos {
-    order: 2;
-    min-width: 0%;
+    margin: 0;
+    min-width: 5%;
     display: block;
   }
 
@@ -578,7 +617,7 @@ footer hr {
   }
 
   .buscador {
-    min-width: 70%;
+    min-width: 40%;
     order: 3;
     display: flex;
     justify-content: end;
@@ -586,7 +625,7 @@ footer hr {
   }
 
   .buscador input {
-    width: 50%;
+    width: 20%;
   }
 
   .buscador button {
@@ -619,6 +658,10 @@ footer hr {
     padding: 5px;
     margin-right: 13px;
   }
+
+  .redes-boton button:hover {
+    padding: 10px;
+ }
 
   .redes-boton i {
     font-size: 20px;
@@ -665,19 +708,36 @@ footer hr {
     font-size: 16px;
     padding: 8px 17px;
   }
+
+  .slider__btn span {
+
+    display: block;
+  
+  }
 }
 
 /*---------------------MQ960-----------------------*/
 
 @media screen and (min-width: 960px) {
   header {
-    position: fixed;
-    z-index: 1;
+    
+    height: 12%;
+    min-height: 12%;
+
+  }
+
+  .toggle-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 12%;
+
   }
 
   .barra {
     justify-content: center;
     flex-wrap: nowrap;
+    height: 20%;
   }
 
   .titulo {
@@ -685,7 +745,6 @@ footer hr {
   }
 
   .acquarella {
-    /*display: flex;*/
     justify-content: center;
     align-items: end;
     flex-direction: column;
@@ -719,7 +778,7 @@ footer hr {
 
   .ul-nav a {
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 5px;
     padding: 15px 20px 10px 20px;
     border-radius: 100px;
     transition: background-color 0.3s ease;
@@ -731,7 +790,7 @@ footer hr {
 
   .buscador {
     order: 2;
-    min-width: 30%;
+    min-width: 20%;
     justify-content: none;
   }
 
@@ -803,6 +862,7 @@ footer hr {
     font-size: 18px;
     padding: 12px;
   }
+
 }
 
 /*---------------------MQ1800-----------------------*/
